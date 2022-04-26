@@ -1,0 +1,14 @@
+<div class="poke-card">
+    <div class="poke-card__img">
+        <img [src]="img" [alt]="name">
+    </div>
+    <div class="poke-card__info information">
+        <div class="information__identity">
+            <p class="information__name">{{ name }}</p>
+            <p class="information__number">N° {{id}}</p>
+        </div>
+        <div class="information__type">
+            <p class="information__type-label">Type : {{type}}</p>
+        </div>
+    </div>
+</div>

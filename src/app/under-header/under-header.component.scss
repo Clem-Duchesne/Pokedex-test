@@ -1,0 +1,27 @@
+.under-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin: 1rem;
+    
+    font-family: 'Montserrat', sans-serif;
+}
+.type-select{
+    border: 1px solid rgb(37, 37, 37);
+    border-radius: 5Px;
+    margin: 5px;
+    font-size: 1.2rem;
+}
+.name-input{
+    border: 1px solid rgb(37, 37, 37);
+    border-radius: 5Px;
+    margin: 5px;
+    font-size: 1.2rem;
+}
+.id-input{
+    border: 1px solid rgb(37, 37, 37);
+    border-radius: 5Px;
+    margin: 5px;
+    font-size: 1.2rem;
+}

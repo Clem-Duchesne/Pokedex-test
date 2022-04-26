@@ -1,0 +1,33 @@
+//HEADER
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EC1209;
+}
+.header__title{
+    font-family: 'Lilita One', cursive;
+    font-size: 5rem;
+    color: white;
+}
+.header__img{
+    width: 100px;
+    height: auto;
+    margin-bottom: -45px;
+}
+
+//FOOTER
+.footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EC1209;
+    padding: 1rem;
+}
+.footer__text{
+    font-family: 'Monserrat',sans-serif;
+    font-size: 0.9rem;
+    color: white;
+}
