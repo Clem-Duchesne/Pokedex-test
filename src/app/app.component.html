@@ -3,7 +3,7 @@
     <img src="./../assets/img/pokeball.png" alt="pokeball" class="header__img">
 </header>
 <div class="under-header">
-    <select class="type-select" (change)="onSelectedTypeValue()">
+    <select class="type-select" (change)="onSelectedTypeValue($event)">
       <option class="type-select__value" value="default" selected>Type</option>
       <option class="type-select__value" value="Normal">Normal</option>
       <option class="type-select__value" value="Fire">Fire</option>
@@ -23,11 +23,11 @@
       <option class="type-select__value" value="Dragon">Dragon</option>
       <option class="type-select__value" value="Dark">Dark</option>
     </select>
-    <input class="name-input" type="text" placeholder="Rechercher" (keyup.enter)="onNameChange()">
-    <input class="id-input" type="number" placeholder="ID" (keyup.enter)="onNumberChange()">
+    <input class="name-input" type="text" placeholder="Rechercher" (keyup)="onNameChange($event)">
+    <input class="id-input" type="number" placeholder="ID" (keyup)="onNumberChange($event)">
 </div>
 <div class="pokelist" >
-    <poke-card *ngFor="let item of pokemonList" [pokeCard]="item" class="pokecard" ></poke-card>
+    <poke-card *ngFor="let item of pokemonList" [pokeCard]="item" class="pokecard"></poke-card>
 </div>
 <footer class="footer">
     <p class="footer__text">@Clémence Duchesne</p>
