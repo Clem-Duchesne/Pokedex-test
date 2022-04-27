@@ -5,13 +5,11 @@ import {HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { PokeCardComponent } from './poke-card/poke-card.component';
-import { UnderHeaderComponent } from './under-header/under-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PokeCardComponent,
-    UnderHeaderComponent
+    PokeCardComponent
   ],
   imports: [
     BrowserModule, HttpClientModule],

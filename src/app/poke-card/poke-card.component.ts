@@ -11,16 +11,14 @@ export class PokeCardComponent implements OnInit{
   @Input () pokeCard! : PokeCard
   img!: string;
   id!:number;
-  type!:string;
+  type!:[string];
   name!:string;
 
+  @Input('pokeCard') item: any;
 
   
   ngOnInit() {
-    this.img = "http://img.pokemondb.net/artwork/bulbasaur.jpg";
-    this.name = "Bulbi";
-    this.id = 1;
-    this.type ="water";
+    
   }
   
 

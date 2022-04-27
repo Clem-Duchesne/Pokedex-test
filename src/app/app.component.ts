@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import { IPokemon } from './IPokemon';
-
+import pokemons from './../assets/json/seed.json';
+import { PokeCard } from './models/poke-card.model';
 
 
 @Component({
@@ -12,12 +12,22 @@ import { IPokemon } from './IPokemon';
 })
 
 export class AppComponent {
+  
+  public pokemonList:{img:string,id:string,name:string, type:[string]}[] = pokemons;
+  public item!: PokeCard;
   private _url:string = "./assets/json/seed.json";
 
-  constructor(private http : HttpClient){
+
+  ngOnInit(): void {
 
   }
-  getPokemons(): Observable<IPokemon[]>{
-    return this.http.get<IPokemon[]>(this._url);
+  onNameChange(): void {
+
+  }
+  onNumberChange():void {
+    
+  }
+  onSelectedTypeValue(): void{
+    
   }
 }

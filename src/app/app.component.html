@@ -2,8 +2,33 @@
     <h1 class="header__title">Pokedex</h1>
     <img src="./../assets/img/pokeball.png" alt="pokeball" class="header__img">
 </header>
-<app-under-header class="under-header"></app-under-header>
-<poke-card class="pokedex"></poke-card>
+<div class="under-header">
+    <select class="type-select" (change)="onSelectedTypeValue()">
+      <option class="type-select__value" value="default" selected>Type</option>
+      <option class="type-select__value" value="Normal">Normal</option>
+      <option class="type-select__value" value="Fire">Fire</option>
+      <option class="type-select__value" value="Water">Water</option>
+      <option class="type-select__value" value="Electric">Electric</option>
+      <option class="type-select__value" value="Grass">Grass</option>
+      <option class="type-select__value" value="Ice">Ice</option>
+      <option class="type-select__value" value="Fighting">Fighting</option>
+      <option class="type-select__value" value="Poison">Poison</option>
+      <option class="type-select__value" value="Ground">Ground</option>
+      <option class="type-select__value" value="Flying">Flying</option>
+      <option class="type-select__value" value="Steel">Steel</option>
+      <option class="type-select__value" value="Psychic">Psychic</option>
+      <option class="type-select__value" value="Bug">Bug</option>
+      <option class="type-select__value" value="Rock">Rock</option>
+      <option class="type-select__value" value="Ghost">Ghost</option>
+      <option class="type-select__value" value="Dragon">Dragon</option>
+      <option class="type-select__value" value="Dark">Dark</option>
+    </select>
+    <input class="name-input" type="text" placeholder="Rechercher" (keyup.enter)="onNameChange()">
+    <input class="id-input" type="number" placeholder="ID" (keyup.enter)="onNumberChange()">
+</div>
+<div class="pokelist" >
+    <poke-card *ngFor="let item of pokemonList" [pokeCard]="item" class="pokecard" ></poke-card>
+</div>
 <footer class="footer">
     <p class="footer__text">@Clémence Duchesne</p>
 </footer>
