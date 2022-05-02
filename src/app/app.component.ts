@@ -116,6 +116,7 @@ export class AppComponent {
       this.pokemonList = this.pokemonListBySelect;
     }
     else{
+      this.pokemonListBySelect = [];
       this.pokemonList = pokemons;
     }
       
